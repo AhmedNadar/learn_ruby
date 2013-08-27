@@ -10,7 +10,7 @@ def translate(string)
 			new_word = word << "ay"
 
 		elsif word.start_with?("squ")
-			new_word = word[3..-1] << word[0..] + "ay"
+			new_word = word[3..-1] << word[0..2] + "ay"
 
 	
 		elsif word.start_with?("qu")
