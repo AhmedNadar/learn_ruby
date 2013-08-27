@@ -2,26 +2,27 @@
 #
 # Rule 1: If a word begins with a vowel sound, add an "ay" sound to the end of the word.
 #
-# Rule 2: If a word begins with a consonant sound, move it to the end of the word, and then add an "ay" sound to the end of the word.
+# Rule 2: If a word begins with a consonant sound, 
+#move it to the end of the word, and then add an "ay" sound to the end of the word.
 
 require "pig_latin"
 
 describe "#translate" do
 
-  # it "translates a word beginning with a vowel" do
-  #   s = translate("apple")
-  #   s.should == "appleay"
-  # end
+  it "translates a word beginning with a vowel" do
+    s = translate("apple")
+    s.should == "appleay"
+  end
 
-  # it "translates a word beginning with a consonant" do
-  #   s = translate("banana")
-  #   s.should == "ananabay"
-  # end
+  it "translates a word beginning with a consonant" do
+    s = translate("banana")
+    s.should == "ananabay"
+  end
 
-  # it "translates a word beginning with two consonants" do
-  #   s = translate("cherry")
-  #   s.should == "errychay"
-  # end
+  it "translates a word beginning with two consonants" do
+    s = translate("cherry")
+    s.should == "errychay"
+  end
 
   it "translates two words" do
     s = translate("eat pie")
